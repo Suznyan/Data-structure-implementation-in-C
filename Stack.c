@@ -31,3 +31,12 @@ int Stack_peek(Stack *S) {
     return S->val[S->top];
 }
 void Stack_destroy(Stack *S) { free(S->val); }
+
+int main(){
+    Stack s;
+    Stack_init(&s, 100);
+    Stack_push(&s, 5);
+    Stack_pop(&s);
+    Stack_destroy(&S);
+    return 0;
+}
